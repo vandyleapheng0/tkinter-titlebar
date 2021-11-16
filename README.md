@@ -3,7 +3,7 @@
 **A Custom title bar for tkinter window**
 
 * Able to change between Darkmode and Lightmode
-* A little customable
+* A little customizable
 
 Note if the app doesn't show in the taskbar
   * call `add_to_taskbar()` method of `TitleBar` at the end but before mainloop
