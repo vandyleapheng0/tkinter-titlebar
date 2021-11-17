@@ -133,7 +133,7 @@ class TitleTk(tk.Tk):
                 "press_bg": "#aaa",
                 "press_fg": fg,
             }
-        if fg not in ("white", "black"):
+        if fg not in ("white", "black", "#fff", "#000"):
             raise ValueError("foreground can only be white or black")
 
         self.titlebar.config(bg=bg)
@@ -146,12 +146,12 @@ class TitleTk(tk.Tk):
             widget.config(bg=bg, fg=fg)
 
         if light_theme:
-            self.close.settings["hover_bg"] = "#da2e25"
+            self.close.settings.update(hover_bg="#da2e25", hover_fg="white")
             self.close.rebind()
 
-        if fg == "black":
+        if fg in ("black", "#000"):
             self.restore_down_image = tk.PhotoImage(file="images/restore_down_dark15.png")
-        elif fg:
+        else:
             self.resize_down_image = tk.PhotoImage(file="images/restore_down_white15.png")
 
     def maximize_window(self, event=None):
