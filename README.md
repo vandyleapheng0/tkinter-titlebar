@@ -1,7 +1,7 @@
 # Tkinter-titlebar
 ### just fun project, you should use customtkinter instead
 ### Link for tutorial on customtkinter by Clear code
-- https://youtu.be/mop6g-c5HEY?si=hjpCeRMpgOicgtKE&t=45004
+- https://youtu.be/mop6g-c5HEY?si=lJ-bKwXXxVTWhUMq&t=45081
 
 **A Custom title bar for tkinter window**
 
